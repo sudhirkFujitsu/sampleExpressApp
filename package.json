@@ -1,0 +1,27 @@
+{
+    "name": "sampleexpressapp",
+    "version": "1.0.0",
+    "description": "sampleExpressApp",
+    "main": "server.js",
+    "nodemonConfig": {
+        "ignore": [
+            "*.json"
+        ]
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-bearer-token": "^2.4.0",
+        "express-jwt": "^6.0.0",
+        "express-validator": "^6.7.0",
+        "lodash": "^4.17.21"
+    },
+    "scripts": {
+        "start": "nodemon --ignore 'orderData_backup/*.json' server.js"
+    },
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "nodemon": "^1.19.2"
+    }
+}
